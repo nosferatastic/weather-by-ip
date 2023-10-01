@@ -1,0 +1,29 @@
+{
+  "name": "paule/weather-by-ip",
+  "version": "1.0.0",
+  "description": "A package to retrieve weather by IP",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paul E"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PaulE\\WeatherByIP\\": "src"
+    }
+  },
+  "extra": {
+      "laravel": {
+          "providers": [
+              "PaulE\\WeatherByIP\\WeatherByIPServiceProvider"
+          ],
+          "aliases": {
+              "WeatherByIP": "PaulE\\WeatherByIP\\Facades\\WeatherByIP"
+          }
+  
+      }
+  }
+
+}
